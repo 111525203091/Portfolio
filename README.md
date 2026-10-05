@@ -8,14 +8,17 @@ Built with pure **HTML5**, **CSS3**, and **vanilla JavaScript** — no external 
 
 ## 🌟 Highlights & Credentials Included
 
-- 🎓 **Education**: 2nd Year B.Tech / B.E. in Artificial Intelligence & Machine Learning (AIML) at **R.M.D. Engineering College**.
+- 🎓 **Education**: 2nd Year B.Tech / B.E. in Artificial Intelligence & Machine Learning (AIML) at **R.M.D. Engineering College** (CGPA: 7.1).
 - 📊 **Academic Scores**:
-  - **10th Class (SSLC)**: 65%
+  - **College CGPA**: 7.1
   - **12th Class (HSC)**: 63%
+  - **10th Class (SSLC)**: 65%
 - 💼 **Industry Internship**: AI DEVELOPER Intern at **ANTYK Technologies** (Intern ID: `AN02AI005`).
 - 📜 **Research Paper Presentation**: Presented paper *"ARTIFICIAL INTELLIGENCE AND ENVIRONMENTAL SUSTAINABILITY : AI INNOVATIONS DRIVING ENVIRONMENTAL TRANSFORMATION"* at the **National Conference AI-SDSC'25**, organized by Depts. of Computer Science, Cyber Security & AIML at **SRM Institute of Science & Technology**, Ramapuram, Chennai.
-- 💻 **Core Languages**: Python, C, C++, Java, Object-Oriented Programming (OOP), Data Structures & Algorithms.
-- 🖼️ **Certificate Lightbox**: Interactive modal viewing for both official certificates with original PDF downloads.
+- 🤖 **Generative AI Specialist**: Certified in **AI Tools & ChatGPT Workshop** by **be10x** (IIT Kharagpur alumni).
+- 🇯🇵 **Foreign Language Qualification**: Certified in **Japanese Language N5 Level (日本語合格)** by **MIRAI School of Languages** in association with RMDEC Dept. of AIML.
+- 💻 **Core Languages & Foundations**: Python, C, C++, Java, OOP, Data Structures, Linear Algebra (24MA201), SVD.
+- 🖼️ **Certificate Lightbox**: Interactive modal viewing for all verified certificates with full-resolution previews and original PDF downloads.
 
 ---
 
@@ -23,17 +26,23 @@ Built with pure **HTML5**, **CSS3**, and **vanilla JavaScript** — no external 
 
 ```text
 Portfolio/
-├── index.html                           # Main portfolio HTML page
+├── index.html                                   # Main portfolio HTML page
 ├── css/
-│   └── style.css                        # Styling, CSS variables, dark/light themes & modal
+│   └── style.css                                # Styling, CSS variables, dark/light themes & modal
 ├── js/
-│   └── main.js                          # Theme switcher, typewriter, filters & modal logic
+│   └── main.js                                  # Theme switcher, typewriter, filters & modal logic
 ├── assets/
+│   ├── images/
+│   │   └── saikrishna_profile.jpg               # Official profile photo
 │   └── certificates/
-│       ├── antyk_internship_certificate.png   # ANTYK Technologies AI Developer Certificate
-│       ├── srm_conference_certificate.png     # SRM Conference Presentation Certificate
-│       └── srm_conference_certificate.pdf     # SRM Presentation Certificate (Original PDF)
-└── README.md                            # Documentation
+│       ├── antyk_internship_certificate.png     # ANTYK Technologies AI Developer Certificate
+│       ├── srm_conference_certificate.png       # SRM Conference Presentation Certificate
+│       ├── srm_conference_certificate.pdf       # SRM Presentation Certificate (Original PDF)
+│       ├── be10x_ai_tools_certificate.png       # be10x AI Tools & ChatGPT Certificate
+│       ├── be10x_ai_tools_certificate.pdf       # be10x Certificate (Original PDF)
+│       ├── mirai_japanese_n5_certificate.png    # MIRAI Japanese Language N5 Certificate
+│       └── mirai_japanese_n5_certificate.pdf    # MIRAI Japanese Certificate (Original PDF)
+└── README.md                                    # Documentation
 ```
 
 ---
