@@ -1397,6 +1397,14 @@ textarea.form-control {
   color: #a78bfa;
 }
 
+.badge-tools {
+  color: #34d399;
+}
+
+.badge-language {
+  color: #f472b6;
+}
+
 .certificate-info {
   padding: 1.75rem;
   display: flex;
