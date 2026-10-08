@@ -60,22 +60,12 @@ Open [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ---
 
-## 🌐 Free Deployment (GitHub Pages)
+## 🌐 Live Website & Deployment
 
-1. Initialize a git repository and commit your files:
-   ```powershell
-   git init
-   git add .
-   git commit -m "Portfolio with certificates and academic profile"
-   ```
-2. Create a repository on GitHub named `portfolio` and push your code:
-   ```powershell
-   git remote add origin https://github.com/<your-username>/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. In your GitHub repository:
-   - Go to **Settings** > **Pages**.
-   - Under **Branch**, select `main` and `/ (root)`.
-   - Click **Save**.
-4. Your portfolio will be live at `https://<your-username>.github.io/portfolio/`!
+- **Live URL**: [https://111525203091.github.io/Portfolio/](https://111525203091.github.io/Portfolio/)
+- **GitHub Repository**: [https://github.com/111525203091/Portfolio](https://github.com/111525203091/Portfolio)
+
+To deploy or update changes:
+```powershell
+.\deploy-to-github.bat
+```
