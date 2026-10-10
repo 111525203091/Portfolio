@@ -1,67 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Portfolio Website Template - Full-Stack Developer, Software Engineer & UI/UX Designer.">
-  <meta name="keywords" content="Portfolio, Web Developer, Software Engineer, Frontend, Backend, UI/UX">
-  <title>Saikrishna Rajan | Software Engineer & Developer</title>
+  <meta name="description" content="Saikrishna Rajan — AI & Machine Learning Engineer, 2nd Year Undergraduate at R.M.D. Engineering College.">
+  <meta name="keywords" content="Saikrishna Rajan, Portfolio, AIML, Machine Learning, Python, C++, Java, RMD Engineering College">
+  <title>Saikrishna Rajan — AIML Engineer & Developer</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Background Ambient Glow -->
-  <div class="bg-ambient" aria-hidden="true">
-    <div class="ambient-blob blob-1"></div>
-    <div class="ambient-blob blob-2"></div>
-    <div class="ambient-blob blob-3"></div>
-  </div>
-
   <!-- =========================================================================
        1. NAVIGATION BAR
        ========================================================================= -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="logo" aria-label="Saikrishna Rajan Homepage">
+      <!-- Brand Logo -->
+      <a href="#hero" class="logo" aria-label="Saikrishna Home">
         <span class="logo-badge">SR</span>
         <span>Sai<span class="gradient-text">krishna</span></span>
       </a>
 
-      <!-- Desktop & Mobile Nav Menu -->
-      <nav class="nav-menu" aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#certificates" class="nav-link">Certificates</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Education & Experience</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+      <!-- Floating Pill Menu (SceneAI Style) -->
+      <nav class="nav-pill-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certificates" class="nav-link">Credentials</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Journey</a>
       </nav>
 
-      <div class="nav-actions">
-        <!-- Dark / Light Theme Toggle -->
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light mode" title="Toggle Theme">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+      <!-- Right Action Items -->
+      <div class="nav-right-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Color Theme" title="Switch Theme">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
           </svg>
         </button>
 
-        <!-- Resume CTA -->
-        <a href="#contact" class="btn btn-primary btn-sm">Get In Touch</a>
-
-        <!-- Mobile Hamburger Button -->
-        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+        <!-- Let's Talk CTA Pill -->
+        <a href="#contact" class="btn-nav-talk">
+          <span>Let's Talk</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
           </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
@@ -69,105 +66,89 @@
 
   <main>
     <!-- =========================================================================
-         2. HERO SECTION
+         2. HERO SECTION — EXACT SCENEAI SOGUIPSUM EDITORIAL STYLE
          ========================================================================= -->
-    <section id="hero" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="status-dot"></span>
-            <span>2nd Year AIML Student @ R.M.D. Engineering College</span>
+    <section id="hero" class="hero-scene-section">
+      <!-- Centerpiece Stage Area -->
+      <div class="hero-stage">
+        <!-- Giant Background Wordmark (SceneAI "Sagim" Style) -->
+        <h1 class="hero-giant-wordmark" aria-hidden="true">SAIKRISHNA</h1>
+
+        <!-- Center Layered Portrait & Floating Cards -->
+        <div class="hero-centerpiece-wrapper">
+          <!-- Central Portrait Arch Frame -->
+          <div class="hero-portrait-arch">
+            <img src="assets/images/saikrishna_profile.jpg" alt="Saikrishna Rajan" class="hero-portrait-img">
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm Saikrishna Rajan.<br>
-            I am a <span class="typewriter-wrapper" id="typewriter-text">2nd Year AIML Student</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            Passionate Artificial Intelligence & Machine Learning engineering student at R.M.D. Engineering College. Former AI Developer Intern at ANTYK Technologies and National Conference Paper Presenter at SRM Institute of Science & Technology. Skilled in Python, C, C++, and Java.
-          </p>
-
-          <div class="hero-cta">
-            <a href="#certificates" class="btn btn-primary">
-              <span>View My Certificates</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 18 6-6-6-6"/>
-              </svg>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Contact Me</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
-            </a>
-          </div>
-
-          <div class="hero-socials">
-            <span class="hero-socials-label">Connect:</span>
-            <!-- GitHub -->
-            <a href="https://github.com/111525203091" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-            <!-- Email -->
-            <a href="mailto:25al091@rmd.ac.in" class="social-icon-link" aria-label="Email">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Hero Avatar / Graphic -->
-        <div class="hero-visual">
-          <div class="avatar-wrapper">
-            <div class="avatar-glow"></div>
-            <div class="avatar-frame">
-              <!-- Profile Photo -->
-              <img src="assets/images/saikrishna_profile.jpg" alt="Saikrishna Rajan" style="width:100%; height:100%; object-fit:cover; border-radius:50%; display:block;">
+          <!-- Floating Product / Profile Card (Matching Left Card in SceneAI Reference) -->
+          <div class="hero-floating-card">
+            <div class="floating-card-thumb-wrap">
+              <img src="assets/images/saikrishna_profile.jpg" alt="Saikrishna Profile" class="floating-card-thumb">
             </div>
-
-            <!-- Floating Tech Badges -->
-            <div class="floating-badge badge-top-left">
-              <span>🤖 2nd Year AIML Student</span>
+            <div class="floating-card-info">
+              <span class="floating-card-tag">AIML Undergraduate</span>
+              <h4 class="floating-card-title">Saikrishna Rajan</h4>
+              <p class="floating-card-sub">R.M.D. Engg • 7.1 CGPA</p>
+              <a href="#certificates" class="floating-card-link">View Credentials →</a>
             </div>
-            <div class="floating-badge badge-bottom-right">
-              <span>📜 Research Presenter</span>
+          </div>
+
+          <!-- Floating Right Badges (SceneAI Floating Elements) -->
+          <div class="hero-floating-badge">
+            <div class="badge-pill-item">
+              <span class="badge-pill-dot"></span>
+              <span>AI Intern @ ANTYK Tech</span>
+            </div>
+            <div class="badge-pill-item">
+              <span class="badge-pill-dot"></span>
+              <span>SRM Conference Presenter</span>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Hero Bottom Bar: Editorial Bio on Left, Scroll Pill on Right -->
+      <div class="hero-bottom-bar">
+        <div class="hero-editorial-bio">
+          <strong>Saikrishna Rajan</strong> is an Artificial Intelligence &amp; Machine Learning engineer at <strong>R.M.D. Engineering College</strong>. Former AI Developer Intern at ANTYK Technologies and National Conference paper presenter at SRM, dedicated to applied Deep Learning and clean software architecture.
+        </div>
+
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to Discover">
+          <span class="scroll-pill-icon"></span>
+          <span>Scroll to Discover</span>
+        </a>
+      </div>
     </section>
 
     <!-- =========================================================================
-         3. STATS BAR
+         3. EDITORIAL METRICS RIBBON
          ========================================================================= -->
-    <section class="stats-bar">
+    <section class="editorial-metrics-ribbon">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-number" data-target="2" data-suffix="nd Year">0</span>
-            <span class="stat-label">AIML Undergraduate</span>
+        <div class="metrics-grid">
+          <div class="metric-column">
+            <span class="metric-index">01 / ACADEMICS</span>
+            <div class="metric-value">7.1<span>CGPA</span></div>
+            <p class="metric-label">B.Tech AIML (2nd Year) @ R.M.D. Engineering College</p>
           </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="4" data-suffix=" Certs">0</span>
-            <span class="stat-label">Verified Credentials & Papers</span>
+
+          <div class="metric-column">
+            <span class="metric-index">02 / CREDENTIALS</span>
+            <div class="metric-value">04<span>Certs</span></div>
+            <p class="metric-label">Verified National Papers, AI Internships &amp; Language Diplomas</p>
           </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="1" data-suffix=" Intern">0</span>
-            <span class="stat-label">ANTYK Technologies</span>
+
+          <div class="metric-column">
+            <span class="metric-index">03 / CODE STACK</span>
+            <div class="metric-value">04<span>Langs</span></div>
+            <p class="metric-label">Python, C, C++, and Java with OOP &amp; Data Structures</p>
           </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="4" data-suffix=" Langs">0</span>
-            <span class="stat-label">Python, C, C++, Java</span>
+
+          <div class="metric-column">
+            <span class="metric-index">04 / EXPERIENCE</span>
+            <div class="metric-value">01<span>Intern</span></div>
+            <p class="metric-label">AI Developer Internship completed at ANTYK Technologies</p>
           </div>
         </div>
       </div>
@@ -179,24 +160,24 @@
     <section id="about" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">About Me</span>
-          <h2 class="section-title">AIML Student, Developer & Researcher</h2>
-          <p class="section-subtitle">Dedicated to mastering Artificial Intelligence, core software programming, and innovative technologies to solve real-world challenges.</p>
+          <span class="section-tag">Profile &amp; Focus</span>
+          <h2 class="section-title">AIML Engineer, Developer &amp; Researcher</h2>
+          <p class="section-subtitle">Dedicated to mastering Artificial Intelligence, foundational mathematical architectures, and real-world software development.</p>
         </div>
 
         <div class="about-grid">
           <div class="about-text">
             <p>
-              Hello! I'm <strong>Saikrishna Rajan</strong>, currently a <strong>2nd-year undergraduate student</strong> specializing in <strong>Artificial Intelligence and Machine Learning (AIML)</strong> at <strong>R.M.D. Engineering College</strong> maintaining a <strong>7.1 CGPA</strong>.
+              Hello! I'm <strong>Saikrishna Rajan</strong>, an engineering undergraduate specializing in <strong>Artificial Intelligence and Machine Learning (AIML)</strong> at <strong>R.M.D. Engineering College</strong> maintaining a <strong>7.1 CGPA</strong>.
             </p>
             <p>
-              My background integrates theoretical rigor with applied industry workflows: I completed an <strong>AI Developer Internship at ANTYK Technologies</strong>, authored and presented a research paper on <em>"Artificial Intelligence and Environmental Sustainability"</em> at the <strong>National Conference AI-SDSC'25</strong> (SRM Institute of Science & Technology), certified in <strong>Generative AI & AI Tools (be10x)</strong>, and successfully qualified in <strong>Japanese Language Proficiency (N5 Level)</strong>.
+              My path bridges rigorous mathematical foundations with modern applied workflows. I completed an <strong>AI Developer Internship at ANTYK Technologies</strong>, authored and presented a research paper on <em>"Artificial Intelligence and Environmental Sustainability"</em> at the <strong>National Conference AI-SDSC'25</strong> at SRM Institute of Science &amp; Technology, earned credentials in <strong>Generative AI &amp; Prompt Engineering (be10x)</strong>, and qualified in <strong>Japanese Language (N5 Level)</strong>.
             </p>
 
-            <!-- Academic Scores / Educational Highlights -->
+            <!-- Academic Scores Cards -->
             <div class="academic-scores-grid">
               <div class="academic-score-card">
-                <div class="academic-score-badge" style="background: linear-gradient(135deg, #10b981, #06b6d4);">
+                <div class="academic-score-badge" style="background: var(--hero-accent);">
                   7.1<span>CGPA</span>
                 </div>
                 <div class="academic-score-details">
@@ -211,7 +192,7 @@
                 </div>
                 <div class="academic-score-details">
                   <h4>12th Class (HSC)</h4>
-                  <p>Higher Secondary Examination</p>
+                  <p>Higher Secondary Certificate</p>
                 </div>
               </div>
 
@@ -221,50 +202,10 @@
                 </div>
                 <div class="academic-score-details">
                   <h4>10th Class (SSLC)</h4>
-                  <p>Secondary School Examination</p>
-                </div>
-              </div>
-
-              <div class="academic-score-card">
-                <div class="academic-score-badge" style="background: linear-gradient(135deg, #6366f1, #a855f7);">
-                  2nd<span>Yr</span>
-                </div>
-                <div class="academic-score-details">
-                  <h4>B.Tech / B.E. AIML</h4>
-                  <p>R.M.D. Engineering College</p>
+                  <p>Secondary School Certificate</p>
                 </div>
               </div>
             </div>
-
-            <div class="about-highlights" style="margin-top: 1.5rem;">
-              <div class="highlight-card">
-                <span class="highlight-icon">🧠</span>
-                <h4>Machine Learning</h4>
-                <p>Building predictive models, understanding deep learning fundamentals, and data analytics.</p>
-              </div>
-              <div class="highlight-card">
-                <span class="highlight-icon">💻</span>
-                <h4>Core Languages</h4>
-                <p>Solid programming foundation in Python, C, C++, and Java with OOP principles.</p>
-              </div>
-              <div class="highlight-card">
-                <span class="highlight-icon">🏢</span>
-                <h4>Industry Experience</h4>
-                <p>Completed AI Developer internship at ANTYK Technologies working on real AI workflows.</p>
-              </div>
-              <div class="highlight-card">
-                <span class="highlight-icon">📑</span>
-                <h4>Research & Presentation</h4>
-                <p>Presented research on AI-driven environmental sustainability at SRM National Conference.</p>
-              </div>
-            </div>
-
-            <a href="#certificates" class="btn btn-primary" style="margin-top: 1.5rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
-              </svg>
-              <span>Explore My Verified Certificates</span>
-            </a>
           </div>
 
           <!-- Code Mockup Card -->
@@ -276,27 +217,22 @@
               <span class="code-title">saikrishna_aiml.ts</span>
             </div>
             <div class="code-content">
-              <p><span class="code-keyword">const</span> aimlStudent = {</p>
+              <p><span class="code-keyword">const</span> engineer = {</p>
               <p>&nbsp;&nbsp;<span class="code-prop">name</span>: <span class="code-str">'Saikrishna Rajan'</span>,</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">program</span>: <span class="code-str">'B.Tech / B.E. - AIML (2nd Year)'</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-prop">program</span>: <span class="code-str">'B.Tech AIML (2nd Year)'</span>,</p>
               <p>&nbsp;&nbsp;<span class="code-prop">college</span>: <span class="code-str">'R.M.D. Engineering College'</span>,</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">academicScores</span>: {</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-prop">collegeCGPA</span>: <span class="code-str">'7.1'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-prop">class12th</span>: <span class="code-str">'63%'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-prop">class10th</span>: <span class="code-str">'65%'</span></p>
-              <p>&nbsp;&nbsp;},</p>
+              <p>&nbsp;&nbsp;<span class="code-prop">cgpa</span>: <span class="code-str">'7.1'</span>,</p>
               <p>&nbsp;&nbsp;<span class="code-prop">languages</span>: [<span class="code-str">'Python'</span>, <span class="code-str">'C'</span>, <span class="code-str">'C++'</span>, <span class="code-str">'Java'</span>],</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">experience</span>: <span class="code-str">'AI Developer Intern @ ANTYK Technologies'</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-prop">internship</span>: <span class="code-str">'AI Developer @ ANTYK Tech'</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-prop">conferencePaper</span>: <span class="code-str">'AI &amp; Environmental Sustainability'</span>,</p>
               <p>&nbsp;&nbsp;<span class="code-prop">certifications</span>: [</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'AI Tools &amp; ChatGPT (be10x)'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'be10x AI Tools &amp; ChatGPT'</span>,</p>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">'Japanese N5 Level (MIRAI / RMDEC)'</span></p>
               <p>&nbsp;&nbsp;],</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">researchPaper</span>: <span class="code-str">'AI &amp; Environmental Sustainability'</span>,</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">conference</span>: <span class="code-str">'National Conference AI-SDSC 25 @ SRM'</span>,</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">foundationalMath</span>: [<span class="code-str">'Linear Algebra'</span>, <span class="code-str">'SVD'</span>, <span class="code-str">'Vector Spaces'</span>],</p>
-              <p>&nbsp;&nbsp;<span class="code-prop">isOpenForOpportunities</span>: <span class="code-keyword">true</span></p>
+              <p>&nbsp;&nbsp;<span class="code-prop">coreMath</span>: [<span class="code-str">'Linear Algebra (24MA201)'</span>, <span class="code-str">'SVD'</span>],</p>
+              <p>&nbsp;&nbsp;<span class="code-prop">openForWork</span>: <span class="code-keyword">true</span></p>
               <p>};</p>
-              <p class="code-comment">// Constantly learning, innovating, and building with AI</p>
+              <p class="code-comment">// Building scalable, impactful intelligence solutions</p>
             </div>
           </div>
         </div>
@@ -304,30 +240,28 @@
     </section>
 
     <!-- =========================================================================
-         5. SKILLS & TECH STACK
+         5. SKILLS & COMPETENCIES SECTION
          ========================================================================= -->
     <section id="skills" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Technical Competencies</span>
-          <h2 class="section-title">Skills & Programming Languages</h2>
-          <p class="section-subtitle">Core programming languages learned and applied in academic projects, research, and industry internships.</p>
+          <h2 class="section-title">Skills &amp; Programming Languages</h2>
+          <p class="section-subtitle">Core programming languages, AI models, and algorithmic foundations applied across research and industrial internships.</p>
         </div>
 
         <div class="skills-grid">
           <!-- Core Languages -->
           <div class="skill-category-card">
             <div class="category-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3>Core Languages</h3>
             <div class="skill-tags">
-              <span class="skill-pill" style="font-weight: 700; color: #38bdf8;">Python</span>
-              <span class="skill-pill" style="font-weight: 700; color: #a78bfa;">C</span>
-              <span class="skill-pill" style="font-weight: 700; color: #818cf8;">C++</span>
-              <span class="skill-pill" style="font-weight: 700; color: #f472b6;">Java</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">Python</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">C</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">C++</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">Java</span>
               <span class="skill-pill">Object-Oriented Programming (OOP)</span>
             </div>
           </div>
@@ -335,11 +269,9 @@
           <!-- AI & Machine Learning -->
           <div class="skill-category-card">
             <div class="category-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4zm0 2a2 2 0 0 1 2 2v2h-4V6a2 2 0 0 1 2-2z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
             </div>
-            <h3>AI & Machine Learning</h3>
+            <h3>AI &amp; Machine Learning</h3>
             <div class="skill-tags">
               <span class="skill-pill">Machine Learning Fundamentals</span>
               <span class="skill-pill">Data Preprocessing</span>
@@ -349,30 +281,26 @@
             </div>
           </div>
 
-          <!-- CS Foundations & Mathematics -->
+          <!-- CS & AI Mathematics -->
           <div class="skill-category-card">
             <div class="category-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
             </div>
             <h3>CS &amp; AI Mathematics</h3>
             <div class="skill-tags">
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">Linear Algebra (24MA201)</span>
+              <span class="skill-pill">Matrix Decomposition &amp; SVD</span>
               <span class="skill-pill">Data Structures</span>
               <span class="skill-pill">Algorithms</span>
-              <span class="skill-pill" style="font-weight: 700; color: #38bdf8;">Linear Algebra (24MA201)</span>
-              <span class="skill-pill">Matrix Decomposition &amp; SVD</span>
-              <span class="skill-pill">Relational Databases (SQL)</span>
               <span class="skill-pill">Vector Spaces &amp; Orthogonality</span>
+              <span class="skill-pill">Relational Databases (SQL)</span>
             </div>
           </div>
 
-          <!-- Developer Tools & Environment -->
+          <!-- Developer & AI Tools -->
           <div class="skill-category-card">
             <div class="category-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
             <h3>Developer &amp; AI Tools</h3>
             <div class="skill-tags">
@@ -380,23 +308,21 @@
               <span class="skill-pill">Git &amp; GitHub</span>
               <span class="skill-pill">Google Colab</span>
               <span class="skill-pill">Jupyter Notebooks</span>
-              <span class="skill-pill" style="font-weight: 700; color: #34d399;">ChatGPT &amp; GenAI Tools</span>
-              <span class="skill-pill">AI Code Debugging</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">ChatGPT &amp; GenAI Tools</span>
+              <span class="skill-pill">Rapid AI Debugging</span>
             </div>
           </div>
 
           <!-- Languages & Global Readiness -->
           <div class="skill-category-card">
             <div class="category-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
             </div>
             <h3>Languages &amp; Global Readiness</h3>
             <div class="skill-tags">
-              <span class="skill-pill" style="font-weight: 700; color: #f472b6;">Japanese (N5 Level — 日本語)</span>
-              <span class="skill-pill" style="font-weight: 700; color: #38bdf8;">English (Professional)</span>
-              <span class="skill-pill" style="font-weight: 700; color: #a78bfa;">Tamil (Native)</span>
+              <span class="skill-pill" style="color: #f472b6; font-weight: 700;">Japanese (N5 Level — 日本語)</span>
+              <span class="skill-pill" style="color: var(--hero-accent); font-weight: 700;">English (Professional)</span>
+              <span class="skill-pill">Tamil (Native)</span>
               <span class="skill-pill">Technical Documentation</span>
               <span class="skill-pill">Cross-Cultural Communication</span>
             </div>
@@ -406,21 +332,21 @@
     </section>
 
     <!-- =========================================================================
-         6. CERTIFICATES & RESEARCH PAPERS SECTION
+         6. CERTIFICATES & CREDENTIALS SECTION (ALL 4 VERIFIED ITEMS)
          ========================================================================= -->
     <section id="certificates" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Credentials & Achievements</span>
-          <h2 class="section-title">Certificates & Research Papers</h2>
-          <p class="section-subtitle">Verified credentials spanning national conference research, industrial AI development, generative AI productivity workflows, and foreign language proficiency.</p>
+          <span class="section-tag">Credentials &amp; Achievements</span>
+          <h2 class="section-title">Certificates &amp; Research Papers</h2>
+          <p class="section-subtitle">Verified credentials spanning national conference research, industrial AI development, generative AI productivity, and foreign language proficiency.</p>
         </div>
 
         <div class="certificates-grid">
           <!-- Certificate 1: ANTYK Technologies Internship -->
           <article class="certificate-card">
-            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/antyk_internship_certificate.png" data-title="ANTYK Technologies - AI Developer Internship Certificate">
-              <img src="assets/certificates/antyk_internship_certificate.png" alt="ANTYK Technologies AI Developer Internship Certificate" class="certificate-img">
+            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/antyk_internship_certificate.png" data-title="ANTYK Technologies — AI Developer Internship Certificate">
+              <img src="assets/certificates/antyk_internship_certificate.png" alt="ANTYK Technologies AI Developer Certificate" class="certificate-img">
               <span class="certificate-badge">Industry Internship</span>
               <div class="certificate-overlay">
                 <div class="certificate-overlay-icon">
@@ -437,11 +363,10 @@
               <h3>AI DEVELOPER Internship</h3>
               <span class="certificate-issuer">ANTYK Technologies • Ambattur, Chennai</span>
               <p class="certificate-desc">
-                Successfully completed the AI Developer internship working on Artificial Intelligence projects and completing assigned engineering responsibilities with dedication, professionalism, and high quality.
+                Completed the AI Developer internship working on Artificial Intelligence projects, model implementations, and real-world AI applications with high dedication and professionalism.
               </p>
               <div class="certificate-actions">
-                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/antyk_internship_certificate.png" data-title="ANTYK Technologies - AI Developer Internship Certificate">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/antyk_internship_certificate.png" data-title="ANTYK Technologies — AI Developer Internship Certificate">
                   <span>View Full Certificate</span>
                 </button>
                 <a href="assets/certificates/antyk_internship_certificate.png" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
@@ -453,8 +378,8 @@
 
           <!-- Certificate 2: SRM Conference Presentation -->
           <article class="certificate-card">
-            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/srm_conference_certificate.png" data-title="SRM Institute of Science & Technology - National Conference Presentation Certificate">
-              <img src="assets/certificates/srm_conference_certificate.png" alt="SRM Institute of Science & Technology National Conference Paper Presentation Certificate" class="certificate-img">
+            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/srm_conference_certificate.png" data-title="SRM Institute of Science & Technology — National Conference Presentation Certificate">
+              <img src="assets/certificates/srm_conference_certificate.png" alt="SRM Conference Presentation Certificate" class="certificate-img">
               <span class="certificate-badge badge-research">Research Presentation</span>
               <div class="certificate-overlay">
                 <div class="certificate-overlay-icon">
@@ -469,17 +394,15 @@
                 <span>Dec 13, 2025</span>
               </div>
               <h3>Paper Presentation Certificate</h3>
-              <span class="certificate-issuer">SRM Institute of Science & Technology • Ramapuram, Chennai</span>
+              <span class="certificate-issuer">SRM Institute of Science &amp; Technology • Chennai</span>
               <p class="certificate-desc">
-                Presented a research paper entitled <strong>"Artificial Intelligence and Environmental Sustainability: AI Innovations Driving Environmental Transformation"</strong> at the National Conference organized by Depts. of CSE, Cyber Security & AIML.
+                Presented a research paper titled <strong>"Artificial Intelligence and Environmental Sustainability: AI Innovations Driving Environmental Transformation"</strong> at the National Conference organized by Depts. of CSE, Cyber Security &amp; AIML.
               </p>
               <div class="certificate-actions">
-                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/srm_conference_certificate.png" data-title="SRM National Conference Paper Presentation Certificate">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/srm_conference_certificate.png" data-title="SRM Conference Presentation Certificate">
                   <span>View Certificate</span>
                 </button>
                 <a href="assets/certificates/srm_conference_certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                   <span>Download PDF</span>
                 </a>
               </div>
@@ -488,8 +411,8 @@
 
           <!-- Certificate 3: be10x AI Tools & ChatGPT Workshop -->
           <article class="certificate-card">
-            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/be10x_ai_tools_certificate.png" data-title="be10x - AI Tools and ChatGPT Workshop Certificate">
-              <img src="assets/certificates/be10x_ai_tools_certificate.png" alt="be10x AI Tools and ChatGPT Workshop Certificate" class="certificate-img">
+            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/be10x_ai_tools_certificate.png" data-title="be10x — AI Tools & ChatGPT Workshop Certificate">
+              <img src="assets/certificates/be10x_ai_tools_certificate.png" alt="be10x AI Tools Workshop Certificate" class="certificate-img">
               <span class="certificate-badge badge-tools">AI Tools &amp; GenAI</span>
               <div class="certificate-overlay">
                 <div class="certificate-overlay-icon">
@@ -506,15 +429,13 @@
               <h3>AI Tools &amp; ChatGPT Workshop</h3>
               <span class="certificate-issuer">be10x • IIT Kharagpur Alumni Initiative</span>
               <p class="certificate-desc">
-                Completed intensive hands-on certification in Generative AI tools and prompt engineering. Certified in coding and debugging software using AI in under 10 minutes, conducting deep data analysis in under 30 minutes, and building professional presentations in under 5 minutes.
+                Completed intensive hands-on certification in Generative AI tools and prompt engineering. Certified in coding and debugging software using AI in under 10 minutes, fast data analysis, and workflow automation.
               </p>
               <div class="certificate-actions">
-                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/be10x_ai_tools_certificate.png" data-title="be10x - AI Tools and ChatGPT Workshop Certificate">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/be10x_ai_tools_certificate.png" data-title="be10x — AI Tools & ChatGPT Workshop Certificate">
                   <span>View Certificate</span>
                 </button>
                 <a href="assets/certificates/be10x_ai_tools_certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                   <span>Download PDF</span>
                 </a>
               </div>
@@ -523,8 +444,8 @@
 
           <!-- Certificate 4: MIRAI Japanese N5 Level -->
           <article class="certificate-card">
-            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/mirai_japanese_n5_certificate.png" data-title="MIRAI School of Languages - Japanese Language N5 Level Certificate">
-              <img src="assets/certificates/mirai_japanese_n5_certificate.png" alt="MIRAI Japanese Language N5 Level Certificate" class="certificate-img">
+            <div class="certificate-img-container cert-preview-trigger" data-img="assets/certificates/mirai_japanese_n5_certificate.png" data-title="MIRAI School of Languages — Japanese N5 Level Certificate">
+              <img src="assets/certificates/mirai_japanese_n5_certificate.png" alt="MIRAI Japanese Language Certificate" class="certificate-img">
               <span class="certificate-badge badge-language">Japanese (N5 Level)</span>
               <div class="certificate-overlay">
                 <div class="certificate-overlay-icon">
@@ -539,17 +460,15 @@
                 <span>日本語 合格 (Passed)</span>
               </div>
               <h3>Japanese Language N5 Level</h3>
-              <span class="certificate-issuer">MIRAI School of Languages • R.M.D. Engineering College</span>
+              <span class="certificate-issuer">MIRAI School of Languages • RMDEC Dept. of AIML</span>
               <p class="certificate-desc">
-                Successfully completed the curriculum and cleared the examination for <strong>MIRAI Japanese N5 Level</strong> in recognition of dedication and linguistic proficiency. Proficient in Hiragana, Katakana, foundational Kanji, basic grammar structures, and Japanese conversational interaction.
+                Successfully passed the course and examination in <strong>MIRAI Japanese N5 Level</strong>. Demonstrates linguistic competence in Hiragana, Katakana, basic Kanji, grammatical structures, and everyday conversational Japanese.
               </p>
               <div class="certificate-actions">
-                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/mirai_japanese_n5_certificate.png" data-title="MIRAI School of Languages - Japanese Language N5 Level Certificate">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                <button class="btn btn-primary btn-sm cert-preview-trigger" data-img="assets/certificates/mirai_japanese_n5_certificate.png" data-title="MIRAI School of Languages — Japanese N5 Level Certificate">
                   <span>View Certificate</span>
                 </button>
                 <a href="assets/certificates/mirai_japanese_n5_certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                   <span>Download PDF</span>
                 </a>
               </div>
@@ -560,98 +479,74 @@
     </section>
 
     <!-- =========================================================================
-         6. FEATURED PROJECTS SECTION
+         7. FEATURED PROJECTS SECTION
          ========================================================================= -->
-    <section id="projects" class="section">
+    <section id="projects" class="section" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Academic & AI Projects</span>
-          <h2 class="section-title">Projects & Implementations</h2>
-          <p class="section-subtitle">Practical software implementations, machine learning models, and research applications.</p>
-        </div>
-
-        <!-- Filter Controls -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
-          <button class="filter-btn" data-filter="python">Python</button>
-          <button class="filter-btn" data-filter="core">C / C++ / Java</button>
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Selected Projects &amp; Implementations</h2>
+          <p class="section-subtitle">Real-world AI implementations, research software pipelines, and algorithm suites built with Python, C++, Java, and ML models.</p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: AI Environmental Sustainability (Research Based) -->
-          <article class="project-card" data-category="ai python">
+          <!-- Project 1: Environmental Sustainability -->
+          <article class="project-card">
             <div class="project-img-wrapper">
-              <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="250" fill="#064e3b"/>
-                <circle cx="200" cy="125" r="75" fill="#10b981" fill-opacity="0.2"/>
-                <path d="M140 160C140 120 180 90 200 70C220 90 260 120 260 160C260 193 233 220 200 220C167 220 140 193 140 160Z" fill="#10b981" fill-opacity="0.8"/>
-                <path d="M200 110V190M200 150L175 130M200 165L225 145" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-              <span class="project-badge-overlay">AI Research</span>
+              <img src="assets/certificates/srm_conference_certificate.png" alt="AI Environmental Sustainability" class="project-img">
+              <span class="project-badge-overlay">Research Implementation</span>
             </div>
             <div class="project-content">
-              <h3>AI & Environmental Sustainability</h3>
-              <p>Predictive machine learning models and analytical framework investigating how AI innovations can optimize energy usage and drive environmental transformation (presented at SRM AI-SDSC'25).</p>
+              <h3>AI for Environmental Sustainability</h3>
+              <p>Predictive environmental monitoring framework presented at SRM Institute of Science &amp; Technology. Utilizes data modeling and intelligent algorithms to evaluate carbon footprints and resource optimization.</p>
               <div class="project-tags">
                 <span>Python</span>
                 <span>Machine Learning</span>
-                <span>Scikit-Learn</span>
+                <span>Data Analysis</span>
                 <span>Research</span>
               </div>
               <div class="project-links">
-                <a href="#certificates" class="project-link-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-                  <span>View Paper Certificate</span>
+                <a href="assets/certificates/srm_conference_certificate.pdf" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>Read Conference Paper →</span>
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2: ANTYK AI Solutions Prototype -->
-          <article class="project-card" data-category="ai python">
+          <!-- Project 2: ANTYK AI Internship Pipeline -->
+          <article class="project-card">
             <div class="project-img-wrapper">
-              <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="250" fill="#0f172a"/>
-                <circle cx="200" cy="125" r="80" fill="#0891b2" fill-opacity="0.2"/>
-                <path d="M120 160L160 100L200 140L240 80L280 120" stroke="#06b6d4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="240" cy="80" r="8" fill="#6366f1"/>
-              </svg>
-              <span class="project-badge-overlay">Industry Project</span>
+              <img src="assets/certificates/antyk_internship_certificate.png" alt="ANTYK AI Internship Workflows" class="project-img">
+              <span class="project-badge-overlay">Industry AI System</span>
             </div>
             <div class="project-content">
-              <h3>ANTYK Technologies AI Workflows</h3>
-              <p>Hands-on AI algorithms developed during the AI Developer internship at ANTYK Technologies, focusing on data pipelines, predictive inference, and practical model testing.</p>
+              <h3>Applied AI Developer Workflows</h3>
+              <p>Industry-grade AI solution pipeline engineered during internship at ANTYK Technologies. Implemented data preprocessing, model testing, and automation scripts adhering to commercial AI standards.</p>
               <div class="project-tags">
                 <span>Python</span>
-                <span>AI Modeling</span>
-                <span>Data Pipelines</span>
-                <span>Optimization</span>
+                <span>AI Pipelines</span>
+                <span>Automation</span>
+                <span>ANTYK Tech</span>
               </div>
               <div class="project-links">
                 <a href="#certificates" class="project-link-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                  <span>View Internship Certificate</span>
+                  <span>View Internship Credential →</span>
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: C++ & Java DSA Framework -->
-          <article class="project-card" data-category="core">
-            <div class="project-img-wrapper">
-              <svg width="100%" height="100%" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="250" fill="#18181b"/>
-                <rect x="70" y="60" width="120" height="130" rx="8" fill="#27272a"/>
-                <rect x="210" y="60" width="120" height="130" rx="8" fill="#27272a"/>
-                <circle cx="130" cy="110" r="24" fill="#ec4899"/>
-                <circle cx="270" cy="110" r="24" fill="#818cf8"/>
-              </svg>
+          <!-- Project 3: Core Algorithms & OOP Suite -->
+          <article class="project-card">
+            <div class="project-img-wrapper" style="background: #192015; display: flex; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); color: var(--hero-accent); font-size: 2.2rem; font-weight: 700;">
+                &lt;DSA_OOP /&gt;
+              </div>
               <span class="project-badge-overlay">C++ / Java / C</span>
             </div>
             <div class="project-content">
-              <h3>Core Algorithms & OOP Suite</h3>
-              <p>Comprehensive repository of Data Structures, Sorting & Search Algorithms, and Object-Oriented design patterns implemented in C, C++, and Java.</p>
+              <h3>Core Algorithms &amp; OOP Suite</h3>
+              <p>Comprehensive repository of Data Structures, Sorting &amp; Search Algorithms, Linear Algebra Matrix transformations, and Object-Oriented design patterns implemented in C, C++, and Java.</p>
               <div class="project-tags">
                 <span>C</span>
                 <span>C++</span>
@@ -661,8 +556,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/111525203091/Portfolio" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                  <span>GitHub Repository</span>
+                  <span>GitHub Repository →</span>
                 </a>
               </div>
             </div>
@@ -672,14 +566,14 @@
     </section>
 
     <!-- =========================================================================
-         7. WORK EXPERIENCE & EDUCATION TIMELINE
+         8. EDUCATION & JOURNEY TIMELINE
          ========================================================================= -->
-    <section id="experience" class="section" style="background: var(--bg-secondary);">
+    <section id="experience" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Academic & Professional Journey</span>
-          <h2 class="section-title">Education & Experience</h2>
-          <p class="section-subtitle">A chronological record of my academic progression, industry internship, and research achievements.</p>
+          <span class="section-tag">Academic &amp; Professional Journey</span>
+          <h2 class="section-title">Education &amp; Experience</h2>
+          <p class="section-subtitle">A chronological record of academic progression, industry internship, and research achievements.</p>
         </div>
 
         <div class="timeline-container">
@@ -688,7 +582,7 @@
             <span class="timeline-marker"></span>
             <div class="timeline-box">
               <span class="timeline-period">2024 — 2028 (Present)</span>
-              <h3>B.Tech / B.E. in Artificial Intelligence & Machine Learning (CGPA: 7.1)</h3>
+              <h3>B.Tech / B.E. in Artificial Intelligence &amp; Machine Learning (CGPA: 7.1)</h3>
               <div class="timeline-company">R.M.D. Engineering College • Chennai, India</div>
               <p>Currently studying in the <strong>2nd Year</strong> of the AIML degree program maintaining a <strong>7.1 CGPA</strong>. Developing strong foundations in AI principles, machine learning models, algorithms, and core languages including Python, C, C++, and Java.</p>
             </div>
@@ -733,12 +627,12 @@
             <div class="timeline-box">
               <span class="timeline-period">December 2025 (13.12.2025)</span>
               <h3>Research Paper Presentation</h3>
-              <div class="timeline-company">National Conference AI-SDSC'25 • SRM Institute of Science & Technology</div>
-              <p>Authored and presented paper titled <em>"ARTIFICIAL INTELLIGENCE AND ENVIRONMENTAL SUSTAINABILITY : AI INNOVATIONS DRIVING ENVIRONMENTAL TRANSFORMATION"</em> at the National Conference organized by Depts. of CSE, Cyber Security & AIML.</p>
+              <div class="timeline-company">National Conference AI-SDSC'25 • SRM Institute of Science &amp; Technology</div>
+              <p>Authored and presented paper titled <em>"ARTIFICIAL INTELLIGENCE AND ENVIRONMENTAL SUSTAINABILITY : AI INNOVATIONS DRIVING ENVIRONMENTAL TRANSFORMATION"</em> at the National Conference organized by Depts. of CSE, Cyber Security &amp; AIML.</p>
             </div>
           </div>
 
-          <!-- Timeline 4: 12th Class -->
+          <!-- Timeline 6: 12th Class -->
           <div class="timeline-item">
             <span class="timeline-marker"></span>
             <div class="timeline-box">
@@ -749,7 +643,7 @@
             </div>
           </div>
 
-          <!-- Timeline 5: 10th Class -->
+          <!-- Timeline 7: 10th Class -->
           <div class="timeline-item">
             <span class="timeline-marker"></span>
             <div class="timeline-box">
@@ -764,90 +658,78 @@
     </section>
 
     <!-- =========================================================================
-         8. CONTACT SECTION
+         9. CONTACT & SCENEAI INSPIRED CTA SECTION
          ========================================================================= -->
     <section id="contact" class="section" style="background: var(--bg-secondary);">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Let's Connect</span>
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">Have a project idea, an open engineering role, or just want to chat tech? Send me a message!</p>
-        </div>
+        <!-- SceneAI Inspired Curved Hero Banner -->
+        <div class="sceneai-cta-card">
+          <div class="cta-grid">
+            <div class="cta-header">
+              <h2>Let's collaborate on the next AI breakthrough</h2>
+              <p>Looking for a driven AI/ML engineer with solid mathematical foundations, practical internship experience, and multilingual communication? Let's connect.</p>
+            </div>
 
-        <div class="contact-grid">
-          <!-- Info Details -->
-          <div class="contact-info">
-            <h3 style="font-size: 1.6rem; margin-bottom: 0.8rem;">Let's discuss something great together.</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-              I'm always open to discussing new software development initiatives, full-time remote or hybrid opportunities, or open-source collaborations.
-            </p>
-
-            <div class="contact-info-list">
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <div class="contact-quick-info">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
-                <div class="contact-details">
+                <div class="info-details">
                   <h4>Email</h4>
                   <a href="mailto:25al091@rmd.ac.in">25al091@rmd.ac.in</a>
                 </div>
               </div>
 
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
-                <div class="contact-details">
+                <div class="info-details">
                   <h4>Location</h4>
                   <p>R.M.D ENGINEERING COLLEGE, Chennai, India</p>
                 </div>
               </div>
 
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </div>
-                <div class="contact-details">
-                  <h4>Response Time</h4>
-                  <p>Usually within 24 hours</p>
+                <div class="info-details">
+                  <h4>GitHub Profile</h4>
+                  <a href="https://github.com/111525203091" target="_blank" rel="noopener noreferrer">github.com/111525203091</a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Contact Form -->
-          <div class="contact-form-wrapper">
-            <form id="contact-form" class="contact-form">
+        <!-- Interactive Direct Message Form -->
+        <div class="contact-form-wrapper">
+          <form id="contact-form" action="mailto:25al091@rmd.ac.in" method="POST" enctype="text/plain">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
               <div class="form-group">
-                <label for="name">Your Name *</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Jane Doe" required>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
               </div>
-
               <div class="form-group">
-                <label for="email">Your Email Address *</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. jane@example.com" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
               </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Inquiry / Job Opportunity">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project, timeline, or requirements..." required></textarea>
-              </div>
-
-              <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
-                <span>Send Message</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                </svg>
-              </button>
-
-              <div id="toast-msg" class="toast-msg" role="alert"></div>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="Internship Inquiry / Project Collaboration" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -859,29 +741,24 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#hero" class="logo" style="margin-bottom: 0.5rem; display: inline-flex;">
-            <span class="logo-badge">SR</span>
-            <span>Sai<span class="gradient-text">krishna</span></span>
-          </a>
-          <p style="color: var(--text-muted); max-width: 320px; font-size: 0.95rem;">
-            2nd Year AIML Student at R.M.D. Engineering College. AI Developer Intern & Research Paper Presenter.
-          </p>
-        </div>
+        <a href="#hero" class="logo">
+          <span class="logo-badge">SR</span>
+          <span>Sai<span class="gradient-text">krishna</span></span>
+        </a>
 
         <div class="footer-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#certificates" class="nav-link">Certificates</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#certificates">Credentials</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Journey</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 Saikrishna Rajan. All rights reserved.</p>
-        <p>Built with clean HTML5, CSS3 & JavaScript.</p>
+        <p>2nd Year AIML Student @ R.M.D. Engineering College</p>
       </div>
     </div>
   </footer>
